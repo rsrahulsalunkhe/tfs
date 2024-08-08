@@ -5,35 +5,35 @@ import Instagram from './../../assets/icons8-instagram.svg'
 import Linkedin from './../../assets/icons8-linkedin.svg'
 import Twitter from './../../assets/icons8-twitterx.svg'
 import Youtube from './../../assets/icons8-youtube.svg'
-import AppStore from './../../assets/app-store-apple.svg'
-import GooglePlay from './../../assets/google-play.svg'
+import AppStore from './../../assets/app-store-apple.png'
+import GooglePlay from './../../assets/google-play.png'
 import home from './../../assets/home.svg'
 import futures from './../../assets/futures.svg'
 import account from './../../assets/account.svg'
 
 const Footer = () => {
   return (
-    <div className='mt-4 mb-20 px-6 border-t-2'>
+    <div className='mt-4 mb-20 px-6 border-t-2 flex flex-wrap justify-around'>
         <div className='flex gap-4 mt-4 mb-5'>
             <span>Terms Of Use</span> <div className="divider"></div>
             <span>Privacy-Policy</span> <div className="divider"></div>
             <span>About</span>
         </div>
         <div>
-            <span style={{fontWeight: 700}} >Follo us on</span>
+            <span style={{fontWeight: 700, fontSize: '18px'}} >Follo us on</span>
             <div className='flex gap-2'>
-                <img className='w-10' src={Facebook} alt="" />
-                <img className='w-10' src={Instagram} alt="" />
-                <img className='w-10' src={Linkedin} alt="" />
-                <img className='w-10' src={Twitter} alt="" />
-                <img className='w-10' src={Youtube} alt="" />
+                <img className='w-15' src={Facebook} alt="" />
+                <img className='w-15' src={Instagram} alt="" />
+                <img className='w-15' src={Linkedin} alt="" />
+                <img className='w-15' src={Twitter} alt="" />
+                <img className='w-15' src={Youtube} alt="" />
             </div>
         </div>
 
         <div className='mt-4'>
-            <span style={{fontWeight: 700}} >Download the app</span>
+            <span style={{fontWeight: 700, fontSize: '18px'}} >Download the app</span>
             <div className='flex gap-2'>
-                {/* <img className='w-20' src={AppStore} alt="" /> */}
+                <img className='w-32' src={AppStore} alt="" />
                 <img className='w-32' src={GooglePlay} alt="" />
             </div>
         </div>

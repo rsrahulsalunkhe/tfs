@@ -43,25 +43,27 @@ const SentimentCard = () => {
                 <div className='gradient-background2'></div>
             </div>
             
-            <div className='flex justify-around mt-3 mb-3'>
-                <Price status='OPEN' price='5000-5100' change='▲812' color='#00AA08'/>
-                <Price status='Low' price='5000-5100' change='▲812' color='#EE0000'/>
+            <div className='key-statistics'>
+                <Price status='OPEN' price='5000-5100' change='▲812' color='#00AA08'/><div className="divider2"></div>
+                <Price status='LOW' price='5000-5100' change='▲812' color='#EE0000'/><div className="divider2"></div>
                 <Price status='HIGH' price='5000-5100' change='▲812' color='#00AA08'/>
             </div>
 
-            <div className='flex mt-2'>
-                <div className='w-[7%] h-[24px]'>
-                    <img className='w-full h-full' src={opn} alt="" />
+            <div className='summery'>
+                <div className='flex mt-2'>
+                    <div className='w-[7%] h-[24px]'>
+                        <img src={opn} alt="" />
+                    </div>
+                    <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
                 </div>
-                <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
-            </div>
-            <div className='flex mt-2'>
-                <div className='w-[7%] h-[24px]'>
-                    <img className='w-full h-full' src={cub} alt="" />
+                <div className='flex mt-2'>
+                    <div className='w-[7%] h-[24px]'>
+                        <img src={cub} alt="" />
+                    </div>
+                    <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
                 </div>
-                <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
             </div>
-            <p className='text-left ms-6 mt-2' style={{color: '#1400FC', fontWeight: 700, fontSize: '14px'}}>M P AGRO OVERSEAS, DELHI</p>
+            <p className='text-left mt-2' style={{color: '#1400FC', fontWeight: 700, fontSize: '14px'}}>M P AGRO OVERSEAS, DELHI</p>
         </div>
 
         <div className='banner-img my-3'>
