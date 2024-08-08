@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+.date {
+    color: #E25100;
+    background-color: #FFE8D2;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.status {
+    margin-inline-start: auto;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.banner-img {
+    width: 100%;
+
+    img {
+        border-radius: 16px;
+    }
+}
+
+.location {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 18px;
+        font-weight: 900;
+        color: var(--blue);
+    }
+
+    span {
+        font-weight: 600;
+        color: #252323;
+        margin-top: -5px;
+    }
+}
+
+.price {
+    display: flex;
+    margin-inline-start: auto;
+    font-family: 'Work Sans';
+
+    .price-range {
+        font-size: 20px;
+        font-weight: 700;
+        color: #191919;
+    }
+
+    .up-down {
+        margin-inline-start: 0.75rem;
+        .up-down1 {
+            color: var(--white);
+            background-color: var(--green);
+            padding-left: 0.3rem/* 8px */;
+            font-size: 18px;
+            font-weight: 500;
+            padding-right: 0.5rem/* 8px */;
+        }
+    }
+}
+
+.divider1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
+
+.gradient-background1 {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 92, 0, 1));
+    width: 58px;
+    height: 1.75px;
+}
+
+.gradient-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #FF5C00;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.gradient-background2 {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 92, 0, 1));
+    width: 58px;
+    height: 1.75px;
+} 
+
+.price-status {
+    text-align: left;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    
+    span {
+        margin-top: -6px;
+    }
+}

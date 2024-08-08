@@ -1,0 +1,64 @@
+.hr-lines {
+    position: relative;
+    margin: 30px auto;
+    text-align: center;
+    span {
+        background-color: rgba($color: gray, $alpha: 0.3);
+        font-weight: bold;
+        font-size: 20px;
+        padding: 4px;
+        color: gray;
+    }
+}
+  
+.hr-lines:before {
+    content:" ";
+    height: 0.3px;
+    width: 25%;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+  
+.hr-lines:after {
+    content:" ";
+    height: 0.3px;
+    width: 25%;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.commodity {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    span {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .special {
+        font-weight: bold;
+        color: green;
+    }
+}

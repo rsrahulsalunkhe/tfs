@@ -1,0 +1,85 @@
+@import "../../mixins.scss";
+
+.news-card {
+    width: 100%;
+    text-align: left;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    line-height: 1;
+    position: relative;
+
+    .card-detail {
+        padding: 20px 10px 20px 10px !important;
+        width: 100%;
+        text-align: left;
+        border-radius: 12px;
+        // @include sm {
+        //     display: none;
+        // }
+
+    .card-detail-mobile {
+        padding: 20px 10px 20px 10px !important;
+        width: 100%;
+        text-align: left;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+
+        .news-card-date {
+            font-weight: 800;
+            color: var(--black-light);
+        }
+
+        .load-more {
+            color: var(--orange);
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .card-detail-mobile {
+        padding: 20px 10px 20px 10px !important;
+        width: 100%;
+        text-align: left;
+        border-radius: 12px;
+        @include md {
+            display: none;
+        }
+
+        .news-card-date {
+            font-weight: 800;
+            color: var(--black-light);
+        }
+
+        .load-more {
+            color: var(--orange);
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 750;
+    }
+
+    .sub-title {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--gray);
+    }
+}
+
+.banner-img {
+    width: 100%;
+
+    img {
+        border-radius: 16px;
+    }
+}
