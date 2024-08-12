@@ -9,14 +9,23 @@
     line-height: 1;
     position: relative;
 
+    .cart-title {
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--blue);
+        margin-top: 0.5rem /* 8px */;
+        margin-bottom: 0.5rem /* 8px */;
+        line-height: 1.15;
+    }
+
     .card-detail {
         padding: 20px 10px 20px 10px !important;
         width: 100%;
         text-align: left;
         border-radius: 12px;
-        // @include sm {
-        //     display: none;
-        // }
+        @include sm {
+            display: none;
+        }
 
     .card-detail-mobile {
         padding: 20px 10px 20px 10px !important;
@@ -25,16 +34,11 @@
         border-radius: 12px;
         overflow: hidden;
         border: 1px solid black;
-    }
-
-        .news-card-date {
-            font-weight: 800;
-            color: var(--black-light);
         }
 
         .load-more {
-            color: var(--orange);
-            font-size: 18px;
+            color: var(--blue);
+            font-size: 16px;
             font-weight: 700;
             margin-top: 5px;
             cursor: pointer;
@@ -50,14 +54,9 @@
             display: none;
         }
 
-        .news-card-date {
-            font-weight: 800;
-            color: var(--black-light);
-        }
-
         .load-more {
-            color: var(--orange);
-            font-size: 18px;
+            color: var(--blue);
+            font-size: 16px;
             font-weight: 700;
             margin-top: 5px;
             cursor: pointer;
@@ -70,9 +69,15 @@
     }
 
     .sub-title {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 600;
         color: var(--gray);
+        background-color: #F2F2F2;
+        border: 1px solid #DBDBDB;
+        margin-top: 0.5rem /* 8px */;
+        margin-bottom: 0.5rem /* 8px */;
+        border-radius: 4px;
+        padding: 8px;
     }
 }
 
