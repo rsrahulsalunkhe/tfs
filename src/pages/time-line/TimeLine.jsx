@@ -6,6 +6,7 @@ import banner from './../../assets/banner.jpeg'
 import banner3 from './../../assets/banner3.jpeg'
 import HeroSection from '../../components/heroSection/HeroSection'
 import ContentWrapper from '../../components/contentWrapper/ContentWrapper'
+import NewsCard from '../../components/newsCard/NewsCard'
 
 const TimeLine = () => {
   return (
@@ -14,7 +15,10 @@ const TimeLine = () => {
       <HeroSection page='timeline' />
       <ContentWrapper>
         <div className='flex flex-wrap justify-between mx-2'>
-          <TimeLineCard img={banner} />
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
+          {/* <TimeLineCard img={banner} /> */}
           {/* <TimeLineCard img={banner3} /> */}
           {/* <TimeLineCard img={banner3} /> */}
           {/* <TimeLineCard img={banner} /> */}

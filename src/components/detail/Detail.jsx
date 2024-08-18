@@ -10,7 +10,7 @@ const Detail = () => {
     <div>
       <Header title='detail' />
         <div className='detail'> 
-            <p className='news-card-date'>13 March 2021</p>
+            <span className='date'>13 March 2021</span>
             <h1 className='my-2' style={{lineHeight: 1.15}}>Maize trade offer Aboti canvassing Jalgaon Jaswant Purab Bafna</h1>
             <p className='sub-title my-2' style={{lineHeight: 1.15}}>Deals in Maize, Wheat, Moong, Chana Urad, Jowar, Wheat, Moong, Chana Urad, Jowar</p>
         </div>
@@ -35,7 +35,7 @@ const Detail = () => {
           <a style={{fontWeight: 'regular', fontSize: '18px', color: '#184CD3'}} href="www.medium.com">www.medium.com</a>
         </div>
 
-        <WhatsappShareButton url='hii from rahul'>
+        <WhatsappShareButton url='hii from rahul' className='w-full flex justify-center'>
         <div className='share'>
           <div>
             <img src={whatsapp} alt="" />

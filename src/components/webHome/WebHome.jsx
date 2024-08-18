@@ -2,13 +2,20 @@ import React from 'react'
 import './style.scss'
 import { useState } from 'react'
 import { useNavigate, Link } from "react-router-dom";
+import ContentWrapper from '../contentWrapper/ContentWrapper'
+import AppStore from './../../assets/app-store-apple.png'
+import GooglePlay from './../../assets/google-play.png'
+import chana from './../../assets/chana.png'
+import bajra from './../../assets/bajra.jpg'
+import matar from './../../assets/matar.jpg'
+import moong from './../../assets/moong.png'
 
 const WebHome = () => {
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div>
-      <nav className='lg:mx-[200px]'>
+      <nav className='lg:px-[200px]'>
         <Link to="/" className="title">
           TFS
         </Link>
@@ -20,7 +27,7 @@ const WebHome = () => {
         <ul className={menuOpen ? "open" : ""}>
           <li>
             {/* <NavLink to="/about">Chana</NavLink> */}
-            <p onClick={() => navigate(`/categorie/chana`)}>Chana</p>
+            <p className='me-4' onClick={() => navigate(`/categorie/chana`)}>Chana</p>
           </li>
           <li>
             {/* <NavLink to="/services">Matar</NavLink> */}
@@ -33,7 +40,7 @@ const WebHome = () => {
       </nav>
 
       <main id="main-content" data-controller="scroll-magic">
-        <section className="text-center mt-16 container" data-scroll-magic-target="phoneContainer">
+        {/* <section className="text-center mt-16 container" data-scroll-magic-target="phoneContainer">
             <h1 className="lg:w-2/3 text-3xl md:text-[56px] font-bold leading-none mx-auto md:mb-8 mb-4">
                 1-app for everything money
             </h1>
@@ -49,12 +56,32 @@ const WebHome = () => {
                 className="text-white text-sm md:text-xl hover:bg-white hover:text-sf60 border border-sf60 py-3 px-6 rounded-full inline-block bg-orange-500">
                 Open Savings Account
             </a>
-        </section>
+        </section> */}
 
-        <div className='lg:mx-[200px]'>
+        <ContentWrapper>
+          <section className='w-100 flex mt-5'>
+            <div className='w-[50%] flex flex-col justify-center'>
+              <h1 className='flex' style={{fontSize: '48px', fontWeight: 700}}>Take your Relationship to the next level</h1>
+              <p>A relationship app for couples in love. Explore the limitless bound of your relationship with our private chat, shared gallery and much more.</p>
+              <div className='mt-3'>
+                <span>Available on</span>
+                <div className='flex gap-2'>
+                  <img className='w-32' src={AppStore} alt="" />
+                  <img className='w-32' src={GooglePlay} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className='w-[50%]'>
+              <img src="https://jupiter.money/assets/images/home/upt-jupiter-screens.webp?v=6fa9b831b3"
+          alt="Jupiter mobile app" />
+            </div>
+          </section>
+        </ContentWrapper>
+
+        {/* <div className='lg:mx-[200px]'>
         <img className="px-4 pt-8" src="https://jupiter.money/assets/images/home/upt-jupiter-screens.webp?v=6fa9b831b3"
         alt="Jupiter mobile app" />
-        </div>
+        </div> */}
 
         <section className="text-white bg-orange-400 flex justify-center pb-20 pt-20">
           <div className="container max-w-screen-lg">
@@ -106,6 +133,105 @@ const WebHome = () => {
           </div>
         </section>
 
+        <ContentWrapper>
+          <section className='mt-8'>
+            <span className='ms-2'>Title</span>
+            <div className='flex overflow-scroll mt-4 gap-8'>
+              <div className='commodity' onClick={() => navigate(`/categorie/chana`)} >
+                <div className='img'>
+                    <img src={chana} alt="" />
+                </div>
+                <span>Chana</span>
+                {/* <p className='special'>• Special Report</p> */}
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={matar} alt="" />
+                </div>
+                <span>Matar</span>
+              </div>
+              <div className='commodity' >
+                <div className='img'>
+                    <img src={moong} alt="" />
+                </div>
+                <span>Moong</span>
+              </div>
+            </div>
+          </section>
+        </ContentWrapper>
+
         <div className="mx-auto max-w-screen-lg px-4 mt-8">
           <section className="py-12 lg:py-8 flex flex-col-reverse md:flex-row items-center h-screen">
             <div className="flex-1 lg:mr-6 text-center lg:text-left">
@@ -117,14 +243,7 @@ const WebHome = () => {
               </p>
             </div>
             <div className="flex-1 ml-6">
-              <video
-                data-controller="scroll-video"
-                className="mx-auto"
-                data-scroll-video-target="animation"
-                preload="auto"
-                muted
-                playsInline
-              >
+              <video data-controller="scroll-video" className="mx-auto" data-scroll-video-target="animation" preload="auto" muted playsInline>
                 <source src="https://jupiter.money/assets/videos/home/account-u.mp4" type="video/mp4" />
                 <source src="https://jupiter.money/assets/videos/home/account-u.webm" type="video/webm" />
               </video>

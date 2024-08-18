@@ -31,13 +31,13 @@ const NewsCard = (props) => {
                         <div className='w-[7%] h-[24px]'>
                             <img className='w-full h-full' src={opn} alt="" />
                         </div>
-                        <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
+                        <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontSize: '15px', fontWeight: 500, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
                     </div>
                     <div className='flex mt-2'>
                         <div className='w-[7%] h-[24px]'>
                             <img className='w-full h-full' src={cub} alt="" />
                         </div>
-                        <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
+                        <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontSize: '15px', fontWeight: 500, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
                     </div>
                 </div>
                     {/* <p className='load-more text-right me-2' onClick={() => navigate(`/detail/${props.categorie}`)}><i>Load More Reports {'>'}</i></p> */}
@@ -60,17 +60,16 @@ const NewsCard = (props) => {
                         <div className='w-[7%] h-[24px]'>
                             <img className='w-full h-full' src={opn} alt="" />
                         </div>
-                        <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
+                        <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)',fontSize: '15px', fontWeight: 500, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
                         </div>
                         <div className='flex mt-2'>
                             <div className='w-[7%] h-[24px]'>
                                 <img className='w-full h-full' src={cub} alt="" />
                             </div>
-                            <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
+                            <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)',fontSize: '15px', fontWeight: 500, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
                         </div>
                     </div>
-                {/* <p className='load-more text-right me-2' onClick={() => navigate(`/detail/${props.categorie}`)}><i>Load More Reports {'>'}</i></p> */}
-                <p className='load-more text-right me-2'><i>Load More Reports {'>'}</i></p>
+                <p className='load-more text-right me-2' style={{color: '#0006CC'}}><i>Load More Reports {'>'}</i></p>
             </div>
             <DetailPopup show={show} setShow={setShow} videoId={videoId} setVideoId={setVideoId} />
         </div>
