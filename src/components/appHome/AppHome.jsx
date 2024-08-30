@@ -9,6 +9,8 @@ import { useNavigate } from "react-router-dom";
 import home from './../../assets/home.svg'
 import futures from './../../assets/futures.svg'
 import account from './../../assets/account.svg'
+import AppStore from './../../assets/app-store-apple.png'
+import GooglePlay from './../../assets/google-play.png'
 import './style.scss'
 
 const AppHome = () => {
@@ -16,6 +18,23 @@ const AppHome = () => {
   return (
     <div className='text-center'>
         <Header title='home' />
+        <section className='w-100 mt-5 px-3'>
+            <div className='w-100'>
+              <img src="https://jupiter.money/assets/images/home/upt-jupiter-screens.webp?v=6fa9b831b3"
+                alt="Jupiter mobile app" />
+            </div>
+            <div className='w-100'>
+              <h1 className='flex text-left' style={{fontSize: '48px', fontWeight: 700, lineHeight: 'normal'}}>Take your Relationship to the next level</h1>
+              <p className='text-left'>A relationship app for couples in love. Explore the limitless bound of your relationship with our private chat, shared gallery and much more.</p>
+              <div className='my-3 text-left'>
+                <span className='text-left'>Available on</span>
+                <div className='flex gap-2'>
+                  <img className='w-32' src={AppStore} alt="" />
+                  <img className='w-32' src={GooglePlay} alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
         <div>
             <img className='w-100' src={img1} alt="" />
         </div>
