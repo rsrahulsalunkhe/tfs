@@ -29,10 +29,10 @@ const Categories = () => {
                 <span className='sub-title'>This is sub title</span>
               </div>
               <div className='imgCard gap-[1.5%]'>
-                <img className='lg:w-[32%]' src={bannerImg} alt="" />
-                <img className='lg:w-[32%]' src={bannerImg} alt="" />
-                <img className='lg:w-[32%]' src={bannerImg} alt="" />
-                <img className='lg:w-[32%]' src={bannerImg} alt="" />
+                <img className='lg:w-[32%] mb-2' src={bannerImg} alt="" />
+                <img className='lg:w-[32%] mb-2' src={bannerImg} alt="" />
+                <img className='lg:w-[32%] mb-2' src={bannerImg} alt="" />
+                <img className='lg:w-[32%] mb-2' src={bannerImg} alt="" />
               </div>
             </div>
 
